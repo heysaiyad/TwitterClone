@@ -1,0 +1,28 @@
+/* CSS */
+
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  .links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  #posts {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+  }
+  
+  #posts h1 {
+    margin-bottom: 10px;
+  }
+  
+  #posts h4 {
+    color: #333;
+  }

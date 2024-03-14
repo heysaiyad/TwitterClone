@@ -1,0 +1,59 @@
+/* CSS */
+
+#box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-color: #f4f4f4;
+}
+
+#formbox {
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+  border-radius: 5px;
+}
+
+#formbox form {
+  display: flex;
+  flex-direction: column;
+}
+
+#formbox label {
+  font-size: 20px;
+  color: #333;
+}
+
+#formbox input {
+  padding: 10px;
+  /* margin-bottom: 10px; */
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#formbox button {
+  padding: 10px;
+  font-size: 20px;
+  color: #f4f4f4;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#formbox button:hover {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+#reg a {
+  color: #333;
+  text-decoration: none;
+}
+
+#reg a:hover {
+  color: #1da1f2;
+}

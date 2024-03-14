@@ -1,0 +1,41 @@
+/* CSS */
+
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  #formBox {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+  }
+  
+  #formBox label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  #formBox input[type="text"],
+  #formBox textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  #formBox button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #formBox button:hover {
+    background-color: #1da1f2;
+  }

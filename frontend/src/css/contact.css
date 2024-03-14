@@ -1,0 +1,57 @@
+/* CSS */
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #03c2ed;
+  color: #fff;
+  padding: 10px;
+}
+
+.logo h1 {
+  color: #fff;
+}
+
+.links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+#formSubmission {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+}
+
+#formSubmission label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#formSubmission input[type="text"],
+#formSubmission textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#formSubmission button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#formSubmission button:hover {
+  background-color: #1da1f2;
+}
