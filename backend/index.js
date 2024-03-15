@@ -117,51 +117,6 @@ app.get("/posts", verifyToken, async (req, res) => {
   }
 });
 
-// Fetch a single post
-app.get("/posts/:postId", verifyToken, async (req, res) => {
-  try {
-    const post = await Post.findById(req.params.postId);
-    if (!post) {
-      return res.status(404).send("Post not found");
-    }
-    res.json(post);
-  } catch (error) {
-    res.status(500).send("Error fetching post");
-  }
-});
-
-// Update a post
-app.put("/posts/:postId", verifyToken, async (req, res) => {
-  try {
-    const post = await Post.findOne({
-      _id: req.params.postId,
-      userId: req.user.userId,
-    });
-    if (!post) return res.status(404).send("Post not found or unauthorized");
-    post.title = req.body.title;
-    post.content = req.body.content;
-    await post.save();
-    res.status(200).send("Post updated successfully");
-  } catch (error) {
-    res.status(500).send("Error updating post");
-  }
-});
-
-// Delete a post
-app.delete("/posts/:postId", verifyToken, async (req, res) => {
-  try {
-    const result = await Post.findOneAndDelete({
-      _id: req.params.postId,
-      userId: req.user.userId,
-    });
-    if (!result) {
-      return res.status(404).send("Post not found or unauthorized");
-    }
-    res.status(200).send("Post deleted successfully");
-  } catch (error) {
-    res.status(500).send("Error deleting post");
-  }
-});
 
 app.post("/contact", async (req, res) => {
   console.log("/contact called");

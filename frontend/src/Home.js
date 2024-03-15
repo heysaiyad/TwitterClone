@@ -1,33 +1,20 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-// import "./css/home.css";
+import "./css/home.css";
 import Nav from "./Nav";
 
 export default function Home() {
   return (
-    // <div id="navbar">
-    //   <div id="logo">
-    //     <h1>TWITTER</h1>
-    //   </div>
-
-    //   <div id="links">
-    //     {" "}
-    //     <Link id="Link" to="/">
-    //       Home
-    //     </Link>
-    //     <Link id="Link" to="/contact">
-    //       Contact
-    //     </Link>
-    //     <Link id="Link" to="/about">
-    //       About
-    //     </Link>
-    //     <Link id="Link" to="/login">
-    //       Login/SignUp
-    //     </Link>
-    //   </div>
-    // </div>
     <div>
       <Nav />
+      <div className="img">
+        <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Importance_of_Social_Media_in_Todays_World.jpg" /> 
+        <div className="centered-content">
+          <h1 className="heading">Welcome to Our Social Media Site</h1>
+          <p className="para">Connect, share, and grow with us.</p>
+          <Link to="/registration" className="get-started-btn">Get Started</Link>
+        </div>
+      </div>
     </div>
   );
 }

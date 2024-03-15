@@ -15,9 +15,9 @@ export default function About() {
         <Link to="/about">About</Link>
       </div>
     </nav>
-    <video height="600" width="100%" controls>
-        <source src={require("./Video/video.mp4")} type="video/mp4" />{" "}
-      </video>
+    {/* <video height="600" width="100%" controls> */}
+        {/* <source src={require("./Video/video.mp4")} type="video/mp4" />{" "} */}
+      {/* </video> */}
     </div>
   );
 }
